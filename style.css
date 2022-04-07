@@ -1,0 +1,74 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.container{
+    /* border:2px solid slateblue; */
+    /* max-width:300px; */
+    display:flex;
+    justify-content:center;
+}
+
+#task-list h1{
+    padding:20px;
+    color:slateblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+}
+
+.adder{
+    margin-left:30px;
+}
+.adder input{
+    border:2px solid slateblue;
+    border-radius:5px;
+    width:250px;
+    height:40px;
+    text-align:center;
+    font-size:15px;
+}
+.adder button{
+    height:40px;
+    width:40px;
+    background-color:white;
+    border:2px solid green;
+    cursor:pointer;
+    opacity:0.6;
+    pointer-events: none;
+}
+
+.adder button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.adder button:hover{
+    background-color:green;
+    color:white;
+}
+#list{
+    list-style-type: none;
+    background-color:slateblue;
+    color:white;
+    padding:10px;
+    margin:20px 0px;
+}
+#list li{
+    background-color:white;
+    color:slateblue;
+    padding:10px;
+    margin:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#list li span i{
+    border:2px solid red;
+    padding:5px;
+    cursor:pointer;
+}
+#list li span i:hover{
+    background-color: red;
+    color:white;
+}

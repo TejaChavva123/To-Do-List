@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO LIST</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="TejaChavva">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div id="task-list">
+                <h1>To DO List</h1>
+                <div class="adder">
+                    <input type="text" placeholder="Enter the task name">
+                    <button onclick="addEle()"><i class="fa fa-plus"></i></button>
+                </div>
+                <ul id="list">
+                    <li>To See RRR Movie <span><i onclick="delEle(this)"class="fa fa-trash"></i></span></li>
+                    <li>Buy vegetables <span><i onclick="delEle(this)" class="fa fa-trash"></i></li>
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
